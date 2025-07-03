@@ -1,0 +1,53 @@
+name: Update trending subreddits (reddstats)
+
+on:
+  schedule:
+    - cron: '30 */12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-trending-subreddits:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install -r requirements.txt
+
+    - name: Run gen_trending_reddstats.py daily
+      run: python scripts/gen_trending_reddstats.py daily > trending-reddstats-daily.txt
+
+    - name: Run gen_trending_reddstats.py weekly
+      run: python scripts/gen_trending_reddstats.py weekly > trending-reddstats-weekly.txt
+
+    - name: Abort if empty
+      run: |
+        if [ ! -s trending-reddstats-daily.txt ] || [ ! -s trending-reddstats-weekly.txt ]; then
+          echo "One or both files are empty"
+          exit 1
+        fi
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add trending-reddstats-daily.txt trending-reddstats-weekly.txt
+        if git diff-index --quiet HEAD --; then
+          echo "No changes to commit"
+        else
+          git commit -m "Trending subreddit daily update [$(date +'%Y-%m-%d')]"
+          git push
+        fi
