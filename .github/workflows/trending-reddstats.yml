@@ -33,10 +33,17 @@ jobs:
     - name: Run gen_trending_reddstats.py weekly
       run: python scripts/gen_trending_reddstats.py weekly > trending-reddstats-weekly.txt
 
-    - name: Abort if empty
+    - name: Abort if daily empty
       run: |
-        if [ ! -s trending-reddstats-daily.txt ] || [ ! -s trending-reddstats-weekly.txt ]; then
-          echo "One or both files are empty"
+        if [ ! -s trending-reddstats-daily.txt ]; then
+          echo "Daily file is empty"
+          exit 1
+        fi
+
+    - name: Abort if weekly empty
+      run: |
+        if [ ! -s trending-reddstats-weekly.txt ]; then
+          echo "Weekly file is empty"
           exit 1
         fi
 
