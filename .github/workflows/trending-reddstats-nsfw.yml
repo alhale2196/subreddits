@@ -1,1 +1,4 @@
+name: Update trending NSFW subreddits (reddstats)
 
+on:
+  workflow_dispatch:
