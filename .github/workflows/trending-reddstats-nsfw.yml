@@ -33,10 +33,10 @@ jobs:
         cp "trending-reddstats-weekly-nsfw.txt" "archive/$(date +'%Y-%m-%d')-weekly-nsfw.txt"
 
     - name: Run gen_trending_reddstats.py daily for NSFW
-      run: python scripts/gen_trending_reddstats.py daily --nsfw > trending-reddstats-daily-nsfw.txt
+      run: python scripts/gen_trending_reddstats.py daily --nsfw --limit 17 > trending-reddstats-daily-nsfw.txt
 
     - name: Run gen_trending_reddstats.py weekly for NSFW
-      run: python scripts/gen_trending_reddstats.py weekly --nsfw > trending-reddstats-weekly-nsfw.txt
+      run: python scripts/gen_trending_reddstats.py weekly --nsfw --limit 17 > trending-reddstats-weekly-nsfw.txt
 
     - name: Abort if daily NSFW empty
       run: |
