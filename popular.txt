@@ -861,7 +861,6 @@ confessions
 obs
 LawSchool
 PokemonScarletViolet
-Celebs
 nosleep
 korea
 adventuretime
@@ -3580,7 +3579,6 @@ yeat_
 OmniscientReader
 AnaloguePocket
 UK_Food
-ParadoxExtra
 millenials
 Leathercraft
 immobilier
