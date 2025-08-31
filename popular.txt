@@ -3600,7 +3600,6 @@ programminghorror
 HealthInsurance
 nrl
 bestof
-CringePurgatory
 Creality
 TheCivilService
 Vermintide
@@ -4382,3 +4381,5 @@ Elektroinstallation
 crazysexycool
 gatekeeping
 WootingKB
+latin
+NoSodiumStarfield
