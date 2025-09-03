@@ -985,6 +985,7 @@ HadesTheGame
 WindowsHelp
 VietNam
 Studium
+Nootropics
 stalker
 Daytrading
 Coffee
@@ -1060,7 +1061,6 @@ freefolk
 HypixelSkyblock
 warriors
 airsoft
-Tiktokhelp
 90DayFiance
 MortalKombat
 fivenightsatfreddys
@@ -1115,7 +1115,6 @@ splatoon
 lawschooladmissions
 serbia
 autism
-Canada_sub
 amex
 tjournal_refugees
 editors
@@ -4222,7 +4221,6 @@ geegees
 newcastle
 respectthreads
 BicyclingCirclejerk
-InstagramMarketing
 CurseForge
 NarutoFanfiction
 VacuumCleaners
@@ -4383,3 +4381,5 @@ gatekeeping
 WootingKB
 latin
 NoSodiumStarfield
+StarWarsCantina
+PSLF
