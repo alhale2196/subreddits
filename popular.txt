@@ -2066,7 +2066,6 @@ Healthygamergg
 3dspiracy
 SeriousConversation
 ListOfSubreddits
-evilautism
 SwagBucks
 familyguy
 AnythingGoesNews
@@ -2112,7 +2111,6 @@ de_IAmA
 canon
 django
 AskMec
-TheDeprogram
 askcarguys
 OnlineDating
 ValorantTechSupport
@@ -4383,3 +4381,4 @@ NoSodiumStarfield
 StarWarsCantina
 PSLF
 Rammstein
+canceledpod
