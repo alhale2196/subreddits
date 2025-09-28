@@ -2470,7 +2470,6 @@ AmexPlatinum
 retailhell
 Whatisthis
 socialanxiety
-fosscad
 asexuality
 FingMemes
 gifsthatendtoosoon
@@ -4383,3 +4382,4 @@ StarWarsCantina
 PSLF
 Rammstein
 canceledpod
+FrugalMaleFashionCDN
