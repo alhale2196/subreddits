@@ -1,9 +1,10 @@
 name: Update trending subreddits (gummysearch)
 
 on:
-  schedule:
-    - cron: '15 */12 * * *'
   workflow_dispatch:
+#  schedule:
+#    - cron: '15 */12 * * *'
+#  workflow_dispatch:
 
 permissions:
   contents: write
